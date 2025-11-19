@@ -94,9 +94,6 @@ On kali/parrot give the command exploit
 
 To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
-## OUTPUT:
-
-
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost.
 To become more persistent, we'll migrate to a process that will last longer.
@@ -121,8 +118,6 @@ keyscan_start	Begins capturing keys typed in the target. On the Windows target, 
 ## OUTPUT:
 
 
-
-
 keyscan_dump	Shows the keystrokes captured so far
 ## OUTPUT:
 
@@ -130,6 +125,3 @@ keyscan_dump	Shows the keystrokes captured so far
 ## RESULT:
 The Metasploit framework is  used to compromise windows and is examined successfully.
 
-
-## RESULT:
-The Metasploit framework is  used to compromise windows and is examined successfully.
