@@ -86,7 +86,7 @@ Bypass any warning boxes, double-click the file, and allow it to run.
 On kali/parrot give the command exploit
 ## OUTPUT:
 
-
+<img width="1023" height="135" alt="Screenshot 2025-11-20 001901" src="https://github.com/user-attachments/assets/7ea48d23-2d60-4f52-8292-dfa0fb1391c5" />
 
 To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
